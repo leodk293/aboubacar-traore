@@ -9,48 +9,48 @@ export default function Projects() {
       description:
         "Development of a website allowing users to discover the best anime and manga of the moment thanks to recommendations and rankings.",
       technologies: ["React", "Node.js", "Express", "MongoDB"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/leodk293/clone-anime",
+      demo: "https://clone-anime-xi.vercel.app",
     },
     {
       title: "AI image generator 🤖",
       description:
         "Development of a web application integrating the Hugging Face API to generate images from a prompt via AI.",
       technologies: ["React", "Next.js", "MongoDB", "Tailwind CSS", "API"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/leodk293/ai-image-creator",
+      demo: "https://ai-image-creator-peach.vercel.app",
     },
     {
       title: "Company Website 🏬",
       description:
         "Development of a showcase website for a company, allowing it to present its services and facilitate contact with customers.",
       technologies: ["React", "Next.js", "Tailwind CSS"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/leodk293/envol-technology",
+      demo: "https://envol-technology.vercel.app",
     },
     {
       title: "Crypto currency web app 🪙",
       description:
         "Development of a web app displaying crypto details, as well as market rises and falls in real time",
       technologies: ["React", "Next.js", "MongoDB", "Tailwind CSS", "API"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/leodk293/NexaCoins",
+      demo: "https://nexa-coins.vercel.app",
     },
     {
       title: "Recipes App 🍔",
       description:
         "Development of a recipes app allowing users to browse among several recipes, filtering them by region, category and ingredients.",
       technologies: ["React", "Next.js", "MongoDB", "Tailwind CSS"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/leodk293/feastify",
+      demo: "https://feastify-orpin.vercel.app",
     },
     {
       title: "Blog website 📝",
       description:
         "Development of a blog website allowing users to create, edit and delete posts, as well as comment on them.",
       technologies: ["React", "Next.js", "Tailwind CSS", "MongoDB"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/leodk293/blog",
+      demo: "https://github.com/leodk293/blog",
     },
   ];
 
@@ -83,6 +83,7 @@ export default function Projects() {
                 </div>
                 <div className="flex justify-start space-x-4">
                   <Link
+                    target="_blank"
                     href={project.github}
                     className="text-gray-300 hover:text-purple-400 flex items-center"
                   >
@@ -91,6 +92,7 @@ export default function Projects() {
                   </Link>
                   {project.demo && (
                     <Link
+                      target="_blank"
                       href={project.demo}
                       className="text-gray-300 hover:text-purple-400 flex items-center"
                     >

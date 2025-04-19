@@ -4,6 +4,15 @@ import profileImage from "../../../public/profile-image.png";
 import { Download } from "lucide-react";
 
 export default function Hero() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Traore_Aboubacar.pdf";
+    link.download = "Traore_Aboubacar.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="about"
@@ -28,7 +37,7 @@ export default function Hero() {
           <h2 className="text-xl md:text-2xl mb-6 text-purple-300">
             Software Engineering Student
           </h2>
-          <p className="text-lg font-semibold text-gray-900 mb-8">
+          <p className="text-lg font-semibold text-violet-500 mb-8">
             I'm a passionate software engineering student with a focus on web
             development and machine learning. Currently pursuing my degree in
             Computer Science, I love building applications that solve real-world
@@ -41,9 +50,12 @@ export default function Hero() {
             >
               Contact Me
             </a>
-            <button className="border-2 cursor-pointer flex flex-row gap-2 text-white border-purple-500 bg-purple-500 px-6 py-2 rounded-full font-semibold">
+            <button
+              onClick={handleDownload}
+              className="border-2 cursor-pointer flex flex-row gap-2 text-white border-purple-500 bg-purple-500 px-6 py-2 rounded-full font-semibold"
+            >
               <Download color="#ffffff" />
-              <p> Downoald CV</p>
+              <p> Download CV</p>
             </button>
             <a
               href="#projects"
