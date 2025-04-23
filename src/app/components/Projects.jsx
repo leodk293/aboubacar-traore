@@ -50,7 +50,7 @@ export default function Projects() {
         "Development of a blog website allowing users to create, edit and delete posts, as well as comment on them.",
       technologies: ["React", "Next.js", "Tailwind CSS", "MongoDB"],
       github: "https://github.com/leodk293/blog",
-      demo: "https://github.com/leodk293/blog",
+      demo: "https://neonthoughts.vercel.app",
     },
   ];
 
